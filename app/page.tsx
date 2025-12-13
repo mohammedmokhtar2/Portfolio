@@ -13,6 +13,7 @@
 
 
 import Hero from '../src/components/Hero';
+import Skills from '../src/components/Skills';
 import Projects from '../src/components/Projects';
 import Experience from '../src/components/Experience';
 import Volunteering from '../src/components/Volunteering';
@@ -22,6 +23,7 @@ export default function Home() {
   return (
     <main className="bg-gray-950 min-h-screen text-white">
       <Hero />
+      <Skills /> 
       <Experience />
       <Projects />
       <Volunteering />

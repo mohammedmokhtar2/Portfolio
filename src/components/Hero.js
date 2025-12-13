@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="relative w-40 h-40 mb-8 rounded-full overflow-hidden border-4 border-cyan-500 shadow-[0_0_30px_rgba(34,211,238,0.3)]">
         {/* Make sure you put a file named 'profile.png' in public/images/ */}
         <Image 
-          src="/images/profile.png" 
+          src="/images/profile.jpeg" 
           alt={heroData.name} 
           fill 
           className="object-cover"

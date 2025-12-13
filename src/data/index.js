@@ -61,35 +61,49 @@ export const skillsData = [
 // --- Experience ---
 export const experienceData = [
   {
-    role: "AI Intern",
+    role: "IT Engineer",
+    company: "Helwan Tech Plus (Helwan National University)",
+    duration: "Part-Time",
+    description: "Optimized the student experience by providing 24/7 self-service access to critical information, eliminating the need for physical visits or phone calls.",
+    tags: ["Docker,", "FastAPI", "Chatbots" , "ChromaDB" , "RAG"]
+  },
+  {
+    role: "HCIP AI Engineer Intern",
+    company: "Huawei Academy (portsaid university)",
+    duration: "Internship",
+    description: "pplied AI Domains: Acquired specialized skills in Computer Vision (Image Preprocessing, Feature Extraction), Speech Recognition (GMM-HMM, DNN), and NLP (Text Vectorization, Language Models).",
+    tags: ["Speech Recognition", "NLP", "Full-Stack Strategy"]
+  },
+  {
+    role: "AI Researcher Intern",
     company: "Qayedny",
     duration: "Internship",
-    description: "Built automations with LangGraph, N8N, and APIs. Created a CV parser to extract skills and autofill forms.",
+    description: "Orchestrated an automated recruitment workflow using LangGraph, n8n, and Airtable, integrating a custom CV parser that extracts candidate skills and auto-fills application forms to eliminate manual data entry.",
     tags: ["LangGraph", "N8N", "Chatbots"]
   },
   {
     role: "Data Engineer Intern",
     company: "Digital Egypt Pioneers Initiative (DEPI)",
     duration: "Internship",
-    description: "Trained on SQL, SSIS, Azure, and MLOps. Built real-world data pipelines and analytics practices.",
+    description: "Architected scalable data pipelines using SSIS and Azure, ensuring data integrity and availability for warehousing and analytics.",
     tags: ["Azure", "SQL", "MLOps"]
   },
   {
-    role: "NLP Intern",
+    role: "NLP Engineer Intern",
     company: "National Telecommunication Institute (NTI)",
     duration: "Internship",
-    description: "Performed NLP training using ML, DL, and LLMs. Capstone project involving syntax analysis and conversational AI.",
+    description: "Optimized language models by applying advanced preprocessing techniques (TF-IDF, N-grams) and fine-tuning pre-trained models to improve context understanding and similarity detection.",
     tags: ["NLP", "LLMs", "Transformers"]
   },
   {
-    role: "Computer Vision Intern",
+    role: "Computer Vision Engineer Intern",
     company: "National Telecommunication Institute (NTI)",
     duration: "Internship",
-    description: "Hands-on experience with classification, detection, and face recognition using ResNet and EfficientNet.",
-    tags: ["Computer Vision", "PyTorch"]
+    description: "Enhanced model accuracy by leveraging Transfer Learning on state-of-the-art architectures like ResNet and EfficientNet for complex classification and segmentation tasks.",
+    tags: ["Computer Vision", "TensorFlow", "PyTorch" , "Transfer Learning"]
   },
   {
-    role: "IoT Intern",
+    role: "IoT Engineer Intern",
     company: "Information Technology Institute (ITI)",
     duration: "Internship",
     description: "Developed a Smart Parking System using MQTT and proximity sensors.",
@@ -100,32 +114,32 @@ export const experienceData = [
 // --- Projects ---
 export const projectsData = [
   {
-    title: "Security & Attendance System",
-    description: "Real-time face recognition & logging using YOLOv11.",
+    title: "Security System with Face Recognition",
+    description: "Implemented a high-speed attendance system using YOLOv11, enabling contactless facial recognition that reduces check-in bottlenecks and enhances facility security.",
     image: "/images/security.png", 
     tags: ["YOLOv11", "Deep Learning"],
-    github: "https://github.com/Mukhtar82"
+    github: "https://github.com/mohammedmokhtar2"
   },
   {
-    title: "Startup Matching Chatbot",
-    description: "Intelligent chatbot matching interns with startups using Airtable and LangGraph.",
+    title: "Official University Chatbot",
+    description: "Engineered a production-ready RAG chatbot for the official university website using Gemini API and ChromaDB, providing students with instant, automated access to academic resources.",
     image: "/images/chatbot.png",
-    tags: ["LangGraph", "N8N", "NLP"],
-    github: "https://github.com/Mukhtar82"
+    tags: ["LangGraph","ChromaDB" ,"N8N", "NLP" , "Hugging Face Spaces" , "FastAPI" , "Docker"],
+    github: "https://github.com/mohammedmokhtar2"
   },
   {
-    title: "Autonomous Object Robot",
-    description: "Dual-camera robot for object detection using YOLOv8 and OpenCV.",
+    title: "Autonomous Mobile Robot (Edge AI)",
+    description: "Developed a dual-camera robotic system on Raspberry Pi 4, utilizing stereoscopic vision and YOLOv8 for real-time depth perception and obstacle avoidance.",
     image: "/images/robot.png",
-    tags: ["Robotics", "YOLOv8", "OpenCV"],
-    github: "https://github.com/Mukhtar82"
+    tags: ["Robotics", "YOLOv8", "OpenCV" , "Raspberry Pi 4"],
+    github: "https://github.com/mohammedmokhtar2"
   },
   {
-    title: "AI CV Parser",
-    description: "Automated tool that extracts skills from CVs and auto-fills application forms.",
+    title: "AI Recruitment Automation & Ed-Tech Tools",
+    description: "Built an intelligent resume parser using Python that automatically extracts candidate skills and auto-fills application forms, significantly reducing manual data entry time for users.",
     image: "/images/parser.png",
-    tags: ["Python", "Automation"],
-    github: "https://github.com/Mukhtar82"
+    tags: ["Python", "Automation" , "n8n" , "AirTable"],
+    github: "https://github.com/mohammedmokhtar2"
   }
 ];
 
@@ -134,11 +148,16 @@ export const volunteeringData = [
   {
     role: "Vice Head, Problem-Solving Committee",
     organization: "Pixels Egypt",
-    description: "Trained volunteers in algorithms and data structures."
+    description: "Trained 250+ University Students all around Egypt in algorithms and data structures; organized contests and events."
   },
   {
     role: "Deputy Organizer",
     organization: "Resala Charity Organization",
-    description: "Led medical camp logistics to serve thousands."
+    description: "Led medical camp logistics to serve thousands in underserved Egyptian villages."
+  },
+  {
+    role: "Student Union Chair Family Committee",
+    organization: "Helwan National University",
+    description: ""
   }
 ];
