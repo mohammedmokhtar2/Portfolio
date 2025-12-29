@@ -114,6 +114,36 @@ export const experienceData = [
 // --- Projects ---
 export const projectsData = [
   {
+    title: "Risk AI",
+    description: "Built an intelligent Industrial Safety System which predict if any abnormal event will occure and send message to you and if and event occured it take action and display warning message.",
+    image: "/images/risk.png",
+    tags: ["Python", "React" , "ESP32" , "SQLight"],
+    github: "https://github.com/mohammedmokhtar2/RiskAI-IoT-System"
+  }
+  ,
+  {
+    title: "AI Image Captioning",
+    description: "Built an intelligent system that can help sales team to find the best caption for the products to attached the audience.",
+    image: "/images/caption.png",
+    tags: ["Python", "Transformers" , "NLP" , "CV" , "Docker"],
+    github: "https://captioning-hnu.vercel.app/"
+  }
+  ,
+  {
+    title: "Health Prediction",
+    description: "Built an intelligent System that can help you to track your physical health through giving it just the readings.",
+    image: "/images/health.png",
+    tags: ["Python", "ML" , "Deployment" , "Docker"],
+    github: "https://health-prediction-web.vercel.app/"
+  },
+  {
+    title: "Software-Defined Networks (SDN)",
+    description: "Intelligent SDN Congestion Control & Load Balancing.",
+    image: "/images/SDN.jpeg", 
+    tags: ["YOLOv11", "Deep Learning"],
+    github: "https://github.com/mohammedmokhtar2/Intelligent-SDN"
+  },
+  {
     title: "Security System with Face Recognition",
     description: "Implemented a high-speed attendance system using YOLOv11, enabling contactless facial recognition that reduces check-in bottlenecks and enhances facility security.",
     image: "/images/security.png", 
@@ -141,6 +171,8 @@ export const projectsData = [
     tags: ["Python", "Automation" , "n8n" , "AirTable"],
     github: "https://github.com/mohammedmokhtar2"
   }
+  
+  
 ];
 
 // --- Volunteering ---
