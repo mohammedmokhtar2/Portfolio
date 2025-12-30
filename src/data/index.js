@@ -115,64 +115,76 @@ export const experienceData = [
 export const projectsData = [
   {
     title: "Risk AI",
-    description: "Built an intelligent Industrial Safety System which predict if any abnormal event will occure and send message to you and if and event occured it take action and display warning message.",
+    description: "Built an intelligent Industrial Safety System which predicts if any abnormal event will occur. It sends real-time alerts and triggers automated actions to prevent hazards.",
     image: "/images/risk.png",
-    tags: ["Python", "React" , "ESP32" , "SQLight"],
-    github: "https://github.com/mohammedmokhtar2/RiskAI-IoT-System"
-  }
-  ,
+    tags: ["Python", "React", "ESP32", "SQLite"],
+    github: "https://github.com/mohammedmokhtar2/RiskAI-IoT-System",
+    demo: "", 
+    video: "https://drive.google.com/file/d/1QhkTuzUDNEI8Q8u60g1QpOvZwDNOPrbZ/view?usp=sharing" 
+  },
   {
     title: "AI Image Captioning",
-    description: "Built an intelligent system that can help sales team to find the best caption for the products to attached the audience.",
+    description: "Built an intelligent system that helps sales teams find the best captions for products to attract the audience. Combines Vision and NLP.",
     image: "/images/caption.png",
-    tags: ["Python", "Transformers" , "NLP" , "CV" , "Docker"],
-    github: "https://captioning-hnu.vercel.app/"
-  }
-  ,
+    tags: ["PyTorch", "Transformers", "Docker", "FastAPI", "Next.js", "CV"],
+    github: "https://github.com/mohammedmokhtar2/AI-Image-Captioning-Fullstack", 
+    demo: "https://captioning-hnu.vercel.app/",
+    video: ""
+  },
   {
     title: "Health Prediction",
-    description: "Built an intelligent System that can help you to track your physical health through giving it just the readings.",
+    description: "Built an intelligent System that tracks physical health by analyzing user readings to predict vital metrics.",
     image: "/images/health.png",
-    tags: ["Python", "ML" , "Deployment" , "Docker"],
-    github: "https://health-prediction-web.vercel.app/"
+    tags: ["Python", "ML", "Scikit-learn", "FastAPI", "Docker"],
+    github: "https://github.com/mohammedmokhtar2/Health-prediction", // Update this with the actual repo link
+    demo: "https://health-prediction-web.vercel.app/",
+    video: ""
   },
   {
     title: "Software-Defined Networks (SDN)",
-    description: "Intelligent SDN Congestion Control & Load Balancing.",
-    image: "/images/SDN.jpeg", 
-    tags: ["YOLOv11", "Deep Learning"],
-    github: "https://github.com/mohammedmokhtar2/Intelligent-SDN"
+    description: "Intelligent SDN Congestion Control & Load Balancing system to optimize network traffic flow.",
+    image: "/images/SDN.jpeg",
+    tags: ["Python", "Mininet", "POX Controller", "Networking"], // Fixed: YOLO doesn't apply to SDN
+    github: "https://github.com/mohammedmokhtar2/Intelligent-SDN",
+    demo: "",
+    video: ""
   },
   {
     title: "Security System with Face Recognition",
-    description: "Implemented a high-speed attendance system using YOLOv11, enabling contactless facial recognition that reduces check-in bottlenecks and enhances facility security.",
-    image: "/images/security.png", 
-    tags: ["YOLOv11", "Deep Learning"],
-    github: "https://github.com/mohammedmokhtar2"
+    description: "Implemented a high-speed attendance system using YOLOv11, enabling contactless facial recognition that reduces check-in bottlenecks.",
+    image: "/images/security.png",
+    tags: ["YOLOv11", "Deep Learning", "Python"],
+    github: "https://github.com/mohammedmokhtar2",
+    demo: "",
+    video: ""
   },
   {
     title: "Official University Chatbot",
-    description: "Engineered a production-ready RAG chatbot for the official university website using Gemini API and ChromaDB, providing students with instant, automated access to academic resources.",
+    description: "Engineered a production-ready RAG chatbot for the university website using Gemini API and ChromaDB to provide instant academic resources.",
     image: "/images/chatbot.png",
-    tags: ["LangGraph","ChromaDB" ,"N8N", "NLP" , "Hugging Face Spaces" , "FastAPI" , "Docker"],
-    github: "https://github.com/mohammedmokhtar2"
+    tags: ["LangGraph", "ChromaDB", "N8N", "NLP", "FastAPI", "Docker", "Vector DB"],
+    github: "https://github.com/mohammedmokhtar2",
+    demo: "", 
+    video: ""
   },
   {
     title: "Autonomous Mobile Robot (Edge AI)",
     description: "Developed a dual-camera robotic system on Raspberry Pi 4, utilizing stereoscopic vision and YOLOv8 for real-time depth perception and obstacle avoidance.",
     image: "/images/robot.png",
-    tags: ["Robotics", "YOLOv8", "OpenCV" , "Raspberry Pi 4"],
-    github: "https://github.com/mohammedmokhtar2"
+    tags: ["Robotics", "YOLOv8", "OpenCV", "Raspberry Pi 4"],
+    github: "https://github.com/mohammedmokhtar2",
+    demo: "",
+    video: "" 
   },
   {
-    title: "AI Recruitment Automation & Ed-Tech Tools",
-    description: "Built an intelligent resume parser using Python that automatically extracts candidate skills and auto-fills application forms, significantly reducing manual data entry time for users.",
+    title: "AI Recruitment Automation",
+    description: "Built an intelligent resume parser that extracts candidate skills and auto-fills application forms, reducing manual data entry.",
     image: "/images/parser.png",
-    tags: ["Python", "Automation" , "n8n" , "AirTable"],
-    github: "https://github.com/mohammedmokhtar2"
+    tags: ["Python", "Automation", "n8n", "AirTable"],
+    github: "https://github.com/mohammedmokhtar2",
+    demo: "",
+    video: ""
   }
-  
-  
 ];
 
 // --- Volunteering ---

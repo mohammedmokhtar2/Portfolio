@@ -1,5 +1,5 @@
 import { projectsData } from '../data';
-import Image from 'next/image'; // <--- Import the Image component
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -13,7 +13,7 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <div key={index} className="bg-gray-900 rounded-xl overflow-hidden hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all duration-300 border border-gray-800 group flex flex-col">
               
-              {/* --- IMAGE SECTION (Updated) --- */}
+              {/* --- IMAGE SECTION --- */}
               <div className="relative h-48 w-full overflow-hidden">
                 <Image 
                   src={project.image} 
@@ -30,7 +30,7 @@ const Projects = () => {
                 </p>
                 
                 {/* Tech Tags */}
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, i) => (
                     <span key={i} className="text-xs bg-gray-950 text-cyan-200 px-2 py-1 rounded-full border border-cyan-900">
                       {tag}
@@ -38,9 +38,45 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <a href={project.github} target="_blank" rel="noreferrer" className="mt-auto block text-center bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 rounded-lg transition-colors">
-                  View Code
-                </a>
+                {/* --- BUTTONS SECTION (Updated) --- */}
+                {/* We use 'mt-auto' to push buttons to bottom, and 'flex-wrap' to handle multiple buttons */}
+                <div className="mt-auto flex flex-wrap gap-2">
+                  
+                  {/* 1. Github Button (Always Visible) */}
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noreferrer" 
+                    className="flex-1 text-center bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-2 px-3 rounded-lg transition-colors text-sm"
+                  >
+                    View Code
+                  </a>
+
+                  {/* 2. Live Demo Button (Conditional) */}
+                  {project.demo && (
+                    <a 
+                      href={project.demo} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="flex-1 text-center border border-cyan-500 hover:bg-cyan-900 text-cyan-400 font-bold py-2 px-3 rounded-lg transition-colors text-sm"
+                    >
+                      Live Demo
+                    </a>
+                  )}
+
+                  {/* 3. Video Button (Conditional) */}
+                  {project.video && (
+                    <a 
+                      href={project.video} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="flex-1 text-center border border-red-500 hover:bg-red-900/30 text-red-400 font-bold py-2 px-3 rounded-lg transition-colors text-sm"
+                    >
+                      Watch Video
+                    </a>
+                  )}
+
+                </div>
               </div>
             </div>
           ))}
