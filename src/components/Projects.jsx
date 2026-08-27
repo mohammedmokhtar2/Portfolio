@@ -4,81 +4,103 @@ import { FaGithub, FaExternalLinkAlt, FaPlay } from 'react-icons/fa';
 
 const Projects = () => {
   return (
-    <section className="py-20 bg-gray-950 text-white px-5" id="projects">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 border-b-4 border-cyan-500 w-fit mx-auto pb-2">
-          Featured Projects
-        </h2>
+    <section className="py-28 bg-black text-white px-6 relative" id="projects">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mb-2 block">
+            Engineering Portfolio
+          </span>
+          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-4">
+            Featured Systems & Applications
+          </h2>
+          <p className="text-neutral-400 text-lg max-w-2xl mx-auto font-light">
+            Architected and built with high performance, scalability, and production reliability in mind.
+          </p>
+        </div>
 
+        {/* Apple Product Showcase Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectsData.map((project, index) => (
-            <div key={index} className="bg-gray-900 rounded-xl overflow-hidden hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] transition-all duration-300 border border-gray-800 hover:border-cyan-500/50 group flex flex-col">
+            <div 
+              key={index} 
+              className="rounded-[32px] bg-gradient-to-b from-neutral-900/80 to-neutral-950/90 border border-white/10 overflow-hidden hover:border-white/25 hover:shadow-[0_30px_70px_rgba(0,0,0,0.9)] transition-all duration-500 group flex flex-col backdrop-blur-2xl"
+            >
               
-              {/* --- IMAGE SECTION --- */}
-              <div className="relative h-48 w-full overflow-hidden bg-gray-950">
+              {/* Image Section with Apple Glass Reflection */}
+              <div className="relative h-56 w-full overflow-hidden bg-neutral-950">
                 <Image 
                   src={project.image} 
                   alt={`Screenshot of ${project.title}`} 
                   fill 
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80" />
               </div>
 
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold mb-2 text-cyan-400">{project.title}</h3>
-                <p className="text-gray-300 text-sm mb-4 line-clamp-3 flex-grow leading-relaxed">
+              {/* Content Section */}
+              <div className="p-7 flex flex-col flex-grow">
+                <h3 className="text-2xl font-bold mb-3 tracking-tight text-white group-hover:text-blue-400 transition-colors">
+                  {project.title}
+                </h3>
+                
+                <p className="text-neutral-300 text-sm mb-6 leading-relaxed font-light line-clamp-3 flex-grow">
                   {project.description}
                 </p>
                 
-                {/* Tech Tags */}
+                {/* Tech Badges */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, i) => (
-                    <span key={i} className="text-xs bg-gray-950 text-cyan-300 px-2.5 py-1 rounded-full border border-cyan-900/60 font-medium">
+                    <span 
+                      key={i} 
+                      className="text-[11px] font-medium bg-white/5 text-neutral-300 px-3 py-1 rounded-full border border-white/10 backdrop-blur-md"
+                    >
                       {tag}
                     </span>
                   ))}
                 </div>
 
-                {/* --- BUTTONS SECTION --- */}
-                <div className="mt-auto flex flex-wrap gap-2 pt-2">
+                {/* Apple Pill Action Buttons */}
+                <div className="mt-auto flex flex-wrap gap-2.5 pt-2">
                   
-                  {/* 1. Github Button */}
+                  {/* GitHub Code Button */}
                   <a 
                     href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     aria-label={`View code for ${project.title} on GitHub`}
-                    className="flex-1 min-h-[44px] inline-flex items-center justify-center gap-2 bg-cyan-600 hover:bg-cyan-500 active:scale-95 text-white font-bold py-2.5 px-3 rounded-lg transition-all text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                    className="flex-1 min-h-[42px] inline-flex items-center justify-center gap-2 bg-white text-black hover:bg-neutral-200 active:scale-95 font-semibold py-2.5 px-4 rounded-full transition-all text-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white shadow-md"
                   >
-                    <FaGithub className="text-base" />
-                    <span>View Code</span>
+                    <FaGithub className="text-sm" />
+                    <span>Source Code</span>
                   </a>
 
-                  {/* 2. Live Demo Button */}
+                  {/* Live Demo Button */}
                   {project.demo && (
                     <a 
                       href={project.demo} 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       aria-label={`View live demo for ${project.title}`}
-                      className="flex-1 min-h-[44px] inline-flex items-center justify-center gap-2 border border-cyan-500 hover:bg-cyan-950/60 active:scale-95 text-cyan-400 font-bold py-2.5 px-3 rounded-lg transition-all text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
+                      className="flex-1 min-h-[42px] inline-flex items-center justify-center gap-2 border border-white/20 bg-white/5 hover:bg-white/15 text-white active:scale-95 font-medium py-2.5 px-4 rounded-full transition-all text-xs backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
                     >
-                      <FaExternalLinkAlt className="text-xs" />
+                      <FaExternalLinkAlt className="text-[10px]" />
                       <span>Live Demo</span>
                     </a>
                   )}
 
-                  {/* 3. Video Button */}
+                  {/* Video Button */}
                   {project.video && (
                     <a 
                       href={project.video} 
                       target="_blank" 
                       rel="noopener noreferrer" 
                       aria-label={`Watch video demonstration for ${project.title}`}
-                      className="flex-1 min-h-[44px] inline-flex items-center justify-center gap-2 border border-red-500/80 hover:bg-red-950/40 active:scale-95 text-red-400 font-bold py-2.5 px-3 rounded-lg transition-all text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
+                      className="flex-1 min-h-[42px] inline-flex items-center justify-center gap-2 border border-red-500/30 bg-red-500/10 hover:bg-red-500/20 text-red-300 active:scale-95 font-medium py-2.5 px-4 rounded-full transition-all text-xs backdrop-blur-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-400"
                     >
-                      <FaPlay className="text-xs" />
-                      <span>Watch Video</span>
+                      <FaPlay className="text-[10px]" />
+                      <span>Watch Demo</span>
                     </a>
                   )}
 
@@ -87,6 +109,7 @@ const Projects = () => {
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

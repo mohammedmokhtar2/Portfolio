@@ -1,27 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Mohammed Mokhtar | AI Software Engineer & Technology Builder",
-  description: "Portfolio of Mohammed Mokhtar Soliman Salama, AI Software Engineer & Technology Builder specializing in AI/GenAI, Software Engineering, IoT, and Automation.",
+  title: "Mohammed Mokhtar | Intelligent Systems & AI Engineer",
+  description: "Portfolio of Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer specializing in NLP, RAG, and IoT systems.",
   keywords: [
     "Mohammed Mokhtar",
     "Mohammed Mokhtar Soliman Salama",
+    "Intelligent Systems & AI Engineer",
     "AI Software Engineer",
     "Technology Builder",
     "Artificial Intelligence",
-    "GenAI",
     "Natural Language Processing",
     "Retrieval-Augmented Generation",
     "RAG",
@@ -113,7 +115,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <script
           type="application/ld+json"
@@ -121,7 +123,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${plusJakarta.variable} font-sans bg-black text-neutral-100 antialiased selection:bg-blue-600 selection:text-white min-h-screen relative overflow-x-hidden`}
       >
         {children}
       </body>
