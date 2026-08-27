@@ -15,13 +15,26 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Mohammed Mokhtar | Intelligent Systems & AI Engineer",
-  description: "Portfolio of Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer specializing in NLP, RAG, and IoT systems.",
+  title: "Mohammed Mokhtar (محمد مختار) | Intelligent Systems & AI Engineer",
+  description: "Official portfolio of Eng. Mohammed Mokhtar (محمد مختار), Intelligent Systems & AI Engineer who developed the Helwan National University web platform & RAG chatbot.",
   keywords: [
     "Mohammed Mokhtar",
     "Mohammed Mokhtar Soliman Salama",
+    "Eng. Mohammed Mokhtar",
+    "Eng. Mokhtar",
+    "Mokhtar",
+    "محمد مختار",
+    "المهندس محمد مختار",
+    "م. محمد مختار",
+    "مختار",
+    "جامعة حلوان الأهلية",
+    "شات بوت جامعة حلوان الأهلية",
+    "موقع جامعة حلوان الأهلية",
+    "مين عمل موقع جامعة حلوان الأهلية",
+    "مطور موقع جامعة حلوان الأهلية",
     "Intelligent Systems & AI Engineer",
     "AI Software Engineer",
+    "Software Engineer",
     "Technology Builder",
     "Artificial Intelligence",
     "Natural Language Processing",
@@ -44,8 +57,8 @@ export const metadata: Metadata = {
     apple: "/images/profile.jpeg",
   },
   openGraph: {
-    title: "Mohammed Mokhtar | Intelligent Systems & AI Engineer",
-    description: "Portfolio of Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer specializing in NLP, RAG, and IoT systems.",
+    title: "Mohammed Mokhtar (محمد مختار) | Intelligent Systems & AI Engineer",
+    description: "Portfolio of Eng. Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer who developed the Helwan National University website and AI RAG chatbot.",
     url: "https://www.mohammed-mokhtar.com",
     siteName: "Mohammed Mokhtar Portfolio",
     images: [
@@ -61,8 +74,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mohammed Mokhtar | Intelligent Systems & AI Engineer",
-    description: "Portfolio of Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer specializing in NLP, RAG, and IoT systems.",
+    title: "Mohammed Mokhtar (محمد مختار) | Intelligent Systems & AI Engineer",
+    description: "Portfolio of Eng. Mohammed Mokhtar Soliman Salama, Intelligent Systems & AI Engineer who developed the Helwan National University website and AI RAG chatbot.",
     images: ["/images/profile.jpeg"],
   },
   robots: {
@@ -82,17 +95,29 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Mohammed Mokhtar",
-  "alternateName": "Mohammed Mokhtar Soliman Salama",
+  "alternateName": [
+    "Mohammed Mokhtar Soliman Salama",
+    "Eng. Mohammed Mokhtar",
+    "Eng. Mokhtar",
+    "Mokhtar",
+    "محمد مختار",
+    "المهندس محمد مختار",
+    "م. محمد مختار",
+    "مختار"
+  ],
   "url": "https://www.mohammed-mokhtar.com",
   "image": "https://www.mohammed-mokhtar.com/images/profile.jpeg",
   "jobTitle": "Intelligent Systems & AI Engineer",
+  "description": "Eng. Mohammed Mokhtar Soliman Salama (محمد مختار) is an Intelligent Systems & AI Engineer who developed the official Helwan National University Web Platform (موقع جامعة حلوان الأهلية) and HNU RAG Chatbot (شات بوت جامعة حلوان الأهلية).",
   "worksFor": {
     "@type": "Organization",
-    "name": "Helwan National University"
+    "name": "Helwan National University",
+    "alternateName": "جامعة حلوان الأهلية"
   },
   "alumniOf": {
     "@type": "EducationalOrganization",
-    "name": "Helwan National University"
+    "name": "Helwan National University",
+    "alternateName": "جامعة حلوان الأهلية"
   },
   "knowsAbout": [
     "Artificial Intelligence",
@@ -100,7 +125,11 @@ const jsonLd = {
     "Retrieval-Augmented Generation",
     "Internet of Things",
     "LangGraph",
-    "Embedded Systems"
+    "Embedded Systems",
+    "Helwan National University Web Platform",
+    "Helwan National University Chatbot",
+    "موقع جامعة حلوان الأهلية",
+    "شات بوت جامعة حلوان الأهلية"
   ],
   "sameAs": [
     "https://github.com/mohammedmokhtar2",
