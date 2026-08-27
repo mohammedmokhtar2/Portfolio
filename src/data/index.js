@@ -21,13 +21,16 @@ import {
 // --- Hero Section ---
 export const heroData = {
   name: "Mohammed Mokhtar",
-  role: "AI & ML Engineer | NLP Specialist",
-  subheading: "Aspiring AI and IoT engineer with a strong foundation in intelligent systems, applying Machine Learning and Deep Learning to real-world automation.",
+  fullName: "Mohammed Mokhtar Soliman Salama",
+  role: "Intelligent Systems & AI Engineer",
+  subheading: "Building intelligent software, GenAI applications, RAG architectures, automation systems, and connected IoT technologies.",
+  domains: ["AI / GenAI", "Software Engineering", "IoT", "Automation"],
   location: "Cairo, Egypt",
   email: "muhammedmukhtar822@gmail.com",
   socialLinks: {
     github: "https://github.com/mohammedmokhtar2",
     linkedin: "https://www.linkedin.com/in/mohammedmokhtar2",
+    huggingface: "https://huggingface.co/mohammedmokhtar2",
     email: "mailto:muhammedmukhtar822@gmail.com"
   }
 };
@@ -114,6 +117,24 @@ export const experienceData = [
 // --- Projects ---
 export const projectsData = [
   {
+    title: "KKU-SSAS: Enterprise Dual-Mode IoT System",
+    description: "Enterprise-grade autonomous hydroponic control system engineered for King Khalid University. Features closed-loop pH/EC dosing, mutual-exclusion safety interlocks, ATS power failover, and dual-mode execution (Standalone SoftAP & Multi-Tower Fleet Gateway).",
+    image: "/images/kku-ssas.png",
+    tags: ["ESP32", "Embedded C++", "Flutter", "FastAPI", "MQTT", "TimescaleDB", "Docker"],
+    github: "https://github.com/mohammedmokhtar2/SSAS",
+    demo: "",
+    video: ""
+  },
+  {
+    title: "HNU Official University Web Platform",
+    description: "Modern, internationalized (English & Arabic with full RTL layout support) official web platform for Helwan National University built with Next.js 15, TypeScript, and Tailwind CSS 4.",
+    image: "/images/hnu-website.jpeg",
+    tags: ["Next.js 15", "React 19", "TypeScript", "Tailwind CSS 4", "next-intl", "Zod"],
+    github: "https://github.com/mohammedmokhtar2/website-hnu",
+    demo: "",
+    video: ""
+  },
+  {
     title: "Risk AI",
     description: "Built an intelligent Industrial Safety System which predicts if any abnormal event will occur. It sends real-time alerts and triggers automated actions to prevent hazards.",
     image: "/images/risk.png",
@@ -136,7 +157,7 @@ export const projectsData = [
     description: "Built an intelligent System that tracks physical health by analyzing user readings to predict vital metrics.",
     image: "/images/health.png",
     tags: ["Python", "ML", "Scikit-learn", "FastAPI", "Docker"],
-    github: "https://github.com/mohammedmokhtar2/Health-prediction", // Update this with the actual repo link
+    github: "https://github.com/mohammedmokhtar2/Health-prediction",
     demo: "https://health-prediction-web.vercel.app/",
     video: ""
   },
@@ -144,7 +165,7 @@ export const projectsData = [
     title: "Software-Defined Networks (SDN)",
     description: "Intelligent SDN Congestion Control & Load Balancing system to optimize network traffic flow.",
     image: "/images/SDN.jpeg",
-    tags: ["Python", "Mininet", "POX Controller", "Networking"], // Fixed: YOLO doesn't apply to SDN
+    tags: ["Python", "Mininet", "POX Controller", "Networking"],
     github: "https://github.com/mohammedmokhtar2/Intelligent-SDN",
     demo: "",
     video: ""
