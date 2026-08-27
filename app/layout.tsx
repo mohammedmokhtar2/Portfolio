@@ -44,7 +44,16 @@ export const metadata: Metadata = {
     "IoT",
     "LangGraph",
     "Embedded Systems",
-    "Helwan National University"
+    "Helwan National University",
+    "HNU",
+    "HNU RAG Chatbot",
+    "HNU website",
+    "HNU AI Chatbot",
+    "HNU Chatbot",
+    "HNU official website",
+    "HNU official RAG Chatbot",
+    "HNU official AI Chatbot",
+    "HNU official Chatbot"  
   ],
   authors: [{ name: "Mohammed Mokhtar Soliman Salama", url: "https://www.mohammed-mokhtar.com" }],
   creator: "Mohammed Mokhtar Soliman Salama",
