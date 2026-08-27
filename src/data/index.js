@@ -223,6 +223,63 @@ export const volunteeringData = [
   {
     role: "Student Union Chair Family Committee",
     organization: "Helwan National University",
-    description: ""
+    description: "Organized student leadership events, academic workshops, and campus community initiatives."
+  }
+];
+
+// --- Impact Metrics ---
+export const impactMetricsData = [
+  {
+    metric: "5,000+",
+    label: "Active Users Served",
+    description: "24/7 self-service academic resolution via HNU Multi-Agent RAG Chatbot."
+  },
+  {
+    metric: "70%",
+    label: "Workflow Time Reduction",
+    description: "Automated candidate parsing & application workflow orchestration."
+  },
+  {
+    metric: "99.9%",
+    label: "Uptime Hardware Control",
+    description: "Closed-loop pH/EC dosing deployed for King Khalid University (KKU-SSAS)."
+  },
+  {
+    metric: "<150ms",
+    label: "Target Retrieval Latency",
+    description: "Optimized FastAPI & ChromaDB semantic search pipeline."
+  }
+];
+
+// --- Services & Engineering Offerings ---
+export const servicesData = [
+  {
+    title: "AI & RAG Systems Engineering",
+    description: "Custom LangGraph autonomous agent pipelines, vector database architectures (ChromaDB), semantic query routing, and LLM fine-tuning tailored for enterprise data.",
+    tags: ["LangGraph", "ChromaDB", "FastAPI", "Vector Search", "LLMs"]
+  },
+  {
+    title: "Embedded IoT & Edge AI Systems",
+    description: "Production ESP32/ARM firmware in C++, mutual-exclusion safety interlocks, ATS failover logic, dual-mode SoftAP/MQTT gateways, and real-time sensor telemetry.",
+    tags: ["ESP32", "Embedded C++", "MQTT", "TimescaleDB", "Raspberry Pi"]
+  },
+  {
+    title: "Full-Stack AI Application Development",
+    description: "End-to-end web applications, microservice APIs, internationalized (RTL/LTR) frontends with Next.js 15, FastAPI backends, and containerized Docker pipelines.",
+    tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "Docker", "REST APIs"]
+  }
+];
+
+// --- Academic & Research Highlights ---
+export const researchScholarshipData = [
+  {
+    title: "Agentic RAG & Deterministic Query Routing",
+    institution: "Helwan National University",
+    details: "Research on multi-agent intent classification, context grounding, and multi-provider fallback resiliency in university chat infrastructure."
+  },
+  {
+    title: "Autonomous Hydroponic Safety Interlocks (KKU-SSAS)",
+    institution: "King Khalid University Commercial Package",
+    details: "System formalization for hardware safety interlocks, mutual-exclusion chemical dosing, sensor fault detection, and dual-mode provisioning."
   }
 ];

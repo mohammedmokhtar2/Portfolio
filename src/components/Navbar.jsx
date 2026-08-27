@@ -41,9 +41,11 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="flex items-center gap-1 sm:gap-2 text-xs md:text-sm font-medium text-neutral-400">
           <a href="#about" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">About</a>
+          <a href="#services" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Services</a>
           <a href="#projects" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Projects</a>
           <a href="#experience" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Experience</a>
-          <a href="#skills" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Skills</a>
+          <a href="#research" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all">Research</a>
+          <a href="#skills" className="px-3 py-1.5 rounded-full hover:text-white hover:bg-white/10 transition-all hidden md:inline-block">Skills</a>
         </div>
 
         {/* Action Button */}
